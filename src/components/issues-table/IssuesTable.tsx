@@ -18,13 +18,13 @@ const badgeColors = {
   },
 };
 
-const IssuesTable: React.FC<IssueTableProps>  = ({onselect}) => {
+const IssuesTable: React.FC<IssueTableProps> = ({ onselect }) => {
   return (
     <div className="bg-white border border-gray-200 shadow- rounded-xl p-4">
       <h2 className="text-lg font-semibold mb-2">All Issues</h2>
       <div className="border border-gray-200 rounded-xl overflow-hidden">
         <table className="w-full text-left ">
-          <thead className="text-gray-500 font-normal bg-gray-100 rounded-2xl">
+          <thead className="text-gray-500 font-normal bg-slate-100 rounded-2xl">
             <tr className="text-sm ">
               <th className="p-3 font-medium">Title</th>
               <th className="p-3 font-medium">Assignee</th>
@@ -38,8 +38,7 @@ const IssuesTable: React.FC<IssueTableProps>  = ({onselect}) => {
               <tr key={issue.id} className="border-y border-gray-200">
                 <td className="px-3 pb-4 pt-3 text-gray-800 ">
                   <button onClick={() => onselect(issue.id)}>
-                  {issue.id} • {issue.title}
-
+                    {issue.id} • {issue.title}
                   </button>
                 </td>
 

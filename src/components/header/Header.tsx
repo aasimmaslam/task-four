@@ -13,7 +13,7 @@ const Header = () => {
       <div className="flex justify-between items-center bg-white rounded-xl px-5 py-4 shadow">
         <div className="flex gap-6 items-center ">
           <div className=" bg-gray-100 px-2 py-1 rounded-lg">
-            <p className="text-xs text-gray-500">PRJ-42</p>
+            <p className="text-sm text-gray-500 font-normal">PRJ-42</p>
           </div>
           <div>
             <h1 className="text-3xl font-semibold">Website Redesign</h1>
