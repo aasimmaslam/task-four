@@ -20,7 +20,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, defaultTab, onChange }) => {
           <button
             key={tab}
             onClick={() => handleTabClick(tab)}
-            className={`pb-3 px-3 text-md font-medium border-b-3 ${
+            className={`pb-3 px-3 text-md font-medium border-b-3 cursor-pointer ${
               activeTab === tab
                 ? "border-blue-500 text-black"
                 : "border-transparent text-gray-500 hover:text-gray-700"

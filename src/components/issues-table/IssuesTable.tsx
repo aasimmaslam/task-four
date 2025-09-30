@@ -37,7 +37,10 @@ const IssuesTable: React.FC<IssueTableProps> = ({ onselect }) => {
             {issues.map((issue) => (
               <tr key={issue.id} className="border-y border-gray-200">
                 <td className="px-3 pb-4 pt-3 text-gray-800 ">
-                  <button onClick={() => onselect(issue.id)}>
+                  <button
+                    onClick={() => onselect(issue.id)}
+                    className="cursor-pointer"
+                  >
                     {issue.id} • {issue.title}
                   </button>
                 </td>
